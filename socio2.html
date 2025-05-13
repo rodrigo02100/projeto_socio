@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="socio1.css">
+    <title>TCC</title>
+
+    <style>            
+    .search-input{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .search-button{
+        background-color: aliceblue;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .navigation {
+
+        display: flex;
+        flex-wrap:wrap;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: hsl(235, 56%, 42%);
+        gap: 60px;
+        margin-top: 15px;    
+        margin: 0 auto;    
+   
+    
+    
+        }
+
+        ul{padding: 10px;
+            list-style-type: none;
+            background-color: lightgrey;
+        }
+        a:link{color: rgb(255, 255, 255);
+            
+            }
+
+        a:visited{color: rgb(255, 255, 255);
+            }
+
+        a:hover{color: white;
+           
+        padding: px;
+        border-radius: 10px;
+        text-decoration-line: underline;
+        
+            }
+
+        a:active{color: rgb(46, 53, 141);
+            list-style-type: none;
+            }
+            
+            
+            </style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="TCC.html"> <span class="logo-text">PORTAL SOCIOLOGIA</span></a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Busque um tema" class="search-input">
+            <button class="search-button">🔍</button></i> <br>
+        </div>
+        <nav class="navigation">
+            <a href="socio1.html">SOCIOLOGIA 1</a>
+            <a href="socio2.html">SOCIOLOGIA 2</a>
+            <a href="socio3.html">SOCIOLOGIA 3</a>
+            <a href="socio4.html">SOCIOLOGIA 4</a>
+            <a href="socio5.html">SOCIOLOGIA 5</a>
+            <a href="socio6.html">SOCIOLOGIA 6</a>
+            <a href="socio1.html">ENEM</a>
+            <a href="socio1.html">EXERCÍCIOS</a>
+        </nav>
+       
+    </header>
+
+</div>
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+
+
+</body>
+
+<main class="main-content">
+    <div class="conteudo"> 
+    <div class="banner">
+        <div class="banner-content">
+        
+    
+            <button class="text">SOCIOLOGIA 2</button>
+            <br>
+            <br>
+            
+            <div class="baner-content">
+            <a href="MS1/25.html" class="cta-button"  >Conceito de cultura</a>
+            <a href="MS1/26.html" class="cta-button">Diversidade cultural e etnocentrismo</a>
+          </div>
+            <div class="baner-content">
+            
+            <a href="MS1/23.html" class="cta-button">Karl Marx conceito de divisão social do trabalho</a>
+
+          </div>
+            <div class="baner-content">
+              <a href="MS1/24.html" class="cta-button">Durkheim e o conceito de divisão do trabalho social</a>
+            </div>
+
+        </div>
+        <img src="sociob1.png" alt="SOCIOLOGIA 1">
+        
+    </div>
+</div>
+
+</main>
+
+
+
+
+<div class="sociologia-section">
+  <div class="sociologia-container">
+    <br> <br>
+      <h2 class="sociologia-title">Topicos Sociologia 2</h2><br><br>
+      <h2 class="sociologia-title">O capitalismo e o mundo do trabalho</h2>
+      <div class="sociologia-grid">
+          <a class="sociologia-item" href="MS1/21.html">A contribuição dos clássicos da Sociologia para a compreensão das relações entre trabalho e sociedade</a>
+          <a class="sociologia-item" href="MS1/22.html">Max Weber e A ética protestante e o espírito do capitKarl Marx e o conceito de divisão social do trabalhoalismo</a>
+          <a class="sociologia-item" href="MS1/23.html">Karl Marx e o conceito de divisão social do trabalho</a>
+          <a class="sociologia-item" href="MS1/24.html">Durkheim e o conceito de divisão do trabalho social</a>
+          </div><br> <br></div>
+          <div class="sociologia-container">
+            <br> <br>
+              <h2 class="sociologia-title">Cultura e Sociedade</h2>
+              <div class="sociologia-grid">
+                  <a class="sociologia-item" href="MS1/25.html">Conceito de cultura</a>
+                  <a class="sociologia-item" href="MS1/26.html">Diversidade cultural e etnocentrismo</a>
+                  <a class="sociologia-item" href="MS1/27.html">Multiculturalismo e interculturalidade</a>
+                  </div><br> <br></div>
+               
+                <div class="sociologia-container">
+                  <br> <br>
+                    <h2 class="sociologia-title">Estratificação Social</h2>
+                    <div class="sociologia-grid">
+                        <a class="sociologia-item" href="MS1/28.html">Conceito de classes sociais</a>
+                        <a class="sociologia-item" href="MS1/29.html">Desigualdade social e mobilidade social</a>
+                        <a class="sociologia-item" href="MS1/210.html">Tipos de estratificação</a>
+                        </div><br> <br></div>
+                  
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: rodrigospalla021@.com</p>
+            <p>Telefone: (22) 98808-0994</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Creditos:</h2>
+          <a href="#" class="social-link">Orientador: Ricardo Cesar Rocha Filho</a><br>
+          <a href="#" class="social-link">Desenvolvedor: Rodrigo Spalla Mendonça</a><br>
+          <a href="#" class="social-link">Editora: Maria Eduarda Madureira Vitor da Cruz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>

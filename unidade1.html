@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unidade1.css">
+    <title>TCC</title>
+
+    
+    
+
+</head>
+<header>
+        <div class="header-container">
+            <div class="logo-container">
+              <h1><a href="projetosocio.html">PORTAL SOCIOLOGIA</a></h1>
+                <p>Conhecimento sociológico ao alcance de todos</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar no site..." class="search-bar">
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="unidade1.html">UNIDADE 1</a></li>
+                <li><a href="unidade2.html">UNIDADE 2</a></li>
+                <li><a href="unidade3.html">UNIDADE 3</a></li>
+                <li><a href="capitulos.html">CAPÍTULOS</a></li>
+                <li><a href="slides.html">SLIDES</a></li>
+                 <li><a href="slides.html">QUESTOES</a></li>
+                <li><a href="slides.html">ENEM</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+   
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+
+</body>
+
+<main class="main-content">
+    <div class="conteudo"> 
+    <div class="banner">
+      <div class="banner-img">
+        <img src="IMG/socio1sfundo.png" alt="SOCIOLOGIA 1">
+        <br>
+      </div>
+        <div class="banner-content">
+          
+      
+      
+         
+            <button class="text">UNIDADE 1</button>
+            <br>
+            
+            <div class="baner-content">
+            <a class="cta-button"  >Você conhece a Sociologia? Nesta unidade, vamos estudar alguns conceitos básicos
+              dessa ciência humana, para compreender a relevância que ela tem em nossa vida, 
+              de forma crítica e consciente. Conversaremos também sobre as relações entre indivíduo
+              
+              e sociedade e conheceremos alguns sociólogos que nos ajudam a
+              refletir sobre esse tema. Em seguida, vamos debater assuntos que
+              estão presentes no seu dia a dia, como nossas culturas, diferenças
+              
+              culturais, identidades, ideologias, a indústria cultural, a religiosidade e, por fim, dialogaremos com pensadores
+               da Sociologia de diferentes partes do mundo.</a>
+          
+            
+          </div>
+
+        </div>
+        
+        
+    </div>
+</div>
+
+</main>
+
+
+
+
+<div class="sociologia-section">
+  <div class="sociologia-container">
+    <br> <br>
+      <h2 class="sociologia-title">Unidade 1</h2><br><br>
+      <h2 class="sociologia-title">Conhecimentos Sociológicos</h2>
+      <div class="sociologia-grid">
+          <a class="sociologia-item" href="MS1/intro.html">Sociologia: dialogando com você</a>
+          <a class="sociologia-item" href="MS1/cs.html">A Sociologia como ciência</a>
+          <a class="sociologia-item" href="MS1/sxs2.html">Nossa cultura e nossas diferenças</a>
+          <a class="sociologia-item" href="MS1/psi.html">Juventudes e identidades sociais e culturais</a>
+          <a class="sociologia-item" href="MS1/as.html">Ideologia e Industria Cultural</a>
+          <a class="sociologia-item" href="MS1/psc.html">Sociologiae as religiosidades no Brasil</a>
+          <a class="sociologia-item" href="MS1/km.html">"Sou onde penso": sociologia além da Europa</a>
+         
+          
+        
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: rodrigospalla021@.com</p>
+            <p>Telefone: (22) 98808-0994</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Creditos:</h2>
+          <a href="#" class="social-link">Orientador: Ricardo Cesar Rocha da Costa</a><br>
+          <a href="#" class="social-link">Desenvolvedor: Rodrigo Spalla Mendonça</a><br>
+          <a href="#" class="social-link">Editora: Maria Eduarda Madureira Vitor da Cruz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>

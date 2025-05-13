@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unidade1.css">
+    <title>TCC</title>
+
+    
+    
+
+</head>
+<header>
+        <div class="header-container">
+            <div class="logo-container">
+              <h1><a href="projetosocio.html">PORTAL SOCIOLOGIA</a></h1>
+                <p>Conhecimento sociológico ao alcance de todos</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar no site..." class="search-bar">
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="unidade1.html">UNIDADE 1</a></li>
+                <li><a href="unidade2.html">UNIDADE 2</a></li>
+                <li><a href="unidade3.html">UNIDADE 3</a></li>
+                <li><a href="capitulos.html">CAPÍTULOS</a></li>
+                <li><a href="slides.html">SLIDES</a></li>
+                 <li><a href="slides.html">QUESTOES</a></li>
+                <li><a href="slides.html">ENEM</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+   
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+
+</body>
+
+<main class="main-content">
+    <div class="conteudo"> 
+    <div class="banner">
+      <div class="banner-img">
+        <img src="IMG/s3fundo.png" alt="SOCIOLOGIA 1">
+        <br>
+      </div>
+        <div class="banner-content">
+          
+      
+      
+         
+            <button class="text">UNIDADE 3</button>
+            <br>
+            
+            <div class="baner-content">
+            <a class="cta-button"  >Deixamos para esta última unidade reflexões sociológicas que
+                representam grandes desafios atuais para a humanidade e para
+                o nosso país: os problemas urbanos e do campo, a questão da
+                
+                violência, do racismo, das desigualdades de gênero, da diversidade sexual e dos povos indígenas. Certamente você já deve ter
+                
+                se envolvido em alguns desses debates e reflexões. Quais são as
+                grandes questões de sua cidade? Se você ou sua família vivem
+                
+                no campo, quais problemas enfrentam? Já refletiu sobre as desigualdades raciais e as desigualdades entre mulheres e homens?
+                
+                E sobre as diferentes orientações sexuais? Qual é o seu conhecimento sobre a cultura e a vida dos povos indígenas brasileiros?</a>
+          
+            
+          </div>
+
+        </div>
+        
+        
+    </div>
+</div>
+
+</main>
+
+
+
+
+<div class="sociologia-section">
+  <div class="sociologia-container">
+    <br> <br>
+      <h2 class="sociologia-title">Topicos Unidade 3</h2><br><br>
+      <h2 class="sociologia-title">Desafios atuais</h2>
+      <div class="sociologia-grid">
+          <a class="sociologia-item" href="MS1/intro.html">A questão urbana</a>
+          <a class="sociologia-item" href="MS1/cs.html">A questão da terra</a>
+          <a class="sociologia-item" href="MS1/sxs2.html">Violência e desigualdades sociais</a>
+          <a class="sociologia-item" href="MS1/psi.html">Desnaturalizando as desigualdades raciais</a>
+          <a class="sociologia-item" href="MS1/as.html">Patriarcado e relações de gênero</a>
+          <a class="sociologia-item" href="MS1/psc.html">Diversidade sexual e de gênero</a>
+          <a class="sociologia-item" href="MS1/km.html">Povos indígenas no Brasil</a>
+         
+          
+        
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: rodrigospalla021@.com</p>
+            <p>Telefone: (22) 98808-0994</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Creditos:</h2>
+          <a href="#" class="social-link">Orientador: Ricardo Cesar Rocha da Costa</a><br>
+          <a href="#" class="social-link">Desenvolvedor: Rodrigo Spalla Mendonça</a><br>
+          <a href="#" class="social-link">Editora: Maria Eduarda Madureira Vitor da Cruz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>

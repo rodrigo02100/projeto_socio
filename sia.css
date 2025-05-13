@@ -1,0 +1,158 @@
+
+  .modal {
+    width: 450px;
+    height: 70vh;
+    background-color: #444;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-header {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .btn {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-close {
+    background-color: #dc3545;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .inner {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto;
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .input-box {
+    display: flex;
+    width: 100%;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #pergunta {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #666;
+    color: white;
+  }
+  
+  #enviar {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: 2px solid #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow {
+    font-size: 20px;
+  }
+  
+  /* Estilo para o Scroll lateral */
+.conversa {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 10px; /* Dá espaço para a barra de rolagem */
+  }
+  
+  /* Estilo personalizado da barra de rolagem */
+  .conversa::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  .conversa::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da parte deslizante */
+    border-radius: 10px; /* Borda arredondada */
+    transition: background-color 0.3s ease;
+  }
+  
+  .conversa::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor quando o usuário passa o mouse */
+  }
+  
+  .conversa::-webkit-scrollbar-track {
+    background-color: #333; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px;
+  }
+  
+  /* Adiciona um efeito quando o usuário está rolando */
+  .conversa::-webkit-scrollbar-corner {
+    background-color: #444;
+  }
+  
+  
+  
+  .mensagem {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    font-size: 16px;
+  }
+  
+  .pergunta {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+    border-radius: 15px 15px 0 15px;
+  }
+  
+  .resposta {
+    background-color: #555;
+    color: white;
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0;
+  }
+  

@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        .meio {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .swiper {
+            width: 80%;
+            max-width: 600px;
+        }
+        .swiper-slide {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            opacity: 0.6;
+        }
+        .swiper-slide-active {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .slide-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="meio">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>Exercícios com Gabaritos Explicados!</h2>
+                    <p>Pratique exercícios interativos, aprenda com explicações detalhadas e avance na sua jornada de aprendizado para dominar a matéria.</p>
+                    <a href="#" class="slide-button">Comece a Praticar Agora</a>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Aprenda de Forma Interativa!</h2>
+                    <p>Com desafios envolventes, você reforça seu conhecimento de forma divertida.</p>
+                    <a href="#" class="slide-button">Ver Exercícios</a>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Domine a Matéria com Explicações Detalhadas!</h2>
+                    <p>Cada resposta vem acompanhada de uma explicação clara e objetiva.</p>
+                    <a href="#" class="slide-button">Explorar Agora</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.2,
+                },
+                1024: {
+                    slidesPerView: 2.5,
+                }
+            }
+        });
+    </script>
+</body>
+</html>

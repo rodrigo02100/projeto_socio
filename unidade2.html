@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unidade1.css">
+    <title>TCC</title>
+
+    
+    
+
+</head>
+<header>
+        <div class="header-container">
+            <div class="logo-container">
+              <h1><a href="projetosocio.html">PORTAL SOCIOLOGIA</a></h1>
+                <p>Conhecimento sociológico ao alcance de todos</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar no site..." class="search-bar">
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="unidade1.html">UNIDADE 1</a></li>
+                <li><a href="unidade2.html">UNIDADE 2</a></li>
+                <li><a href="unidade3.html">UNIDADE 3</a></li>
+                <li><a href="capitulos.html">CAPÍTULOS</a></li>
+                <li><a href="slides.html">SLIDES</a></li>
+                 <li><a href="slides.html">QUESTOES</a></li>
+                <li><a href="slides.html">ENEM</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+   
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+
+</body>
+
+<main class="main-content">
+    <div class="conteudo"> 
+    <div class="banner">
+      <div class="banner-img">
+        <img src="IMG/socio1sfundo.png" alt="SOCIOLOGIA 1">
+        <br>
+      </div>
+        <div class="banner-content">
+          
+      
+      
+         
+            <button class="text">UNIDADE 2</button>
+            <br>
+            
+            <div class="baner-content">
+            <a class="cta-button"  >Nesta unidade, vamos conversar sobre grandes temas de nossas sociedades. Vivemos em uma sociedade capitalista. O que
+                
+                isso tem a ver conosco? Como sua família se insere no mundo do
+                
+                trabalho? Como você observa as desigualdades sociais no contexto em que vive? E as grandes questões atuais, como a ambiental,
+                
+                a democracia, a cidadania e os movimentos sociais, já parou para
+                pensar sobre elas? Por fim, vamos conversar a respeito de uma
+                
+                nova realidade presente na sua geração e que não existia na geração de jovens há alguns anos: o papel das mídias conjugadas com
+                
+                a inteligência artificial. Qual é a contribuição que a Sociologia
+                pode oferecer para refletir sobre essa temática?</a>
+          
+            
+          </div>
+
+        </div>
+        
+        
+    </div>
+</div>
+
+</main>
+
+
+
+
+<div class="sociologia-section">
+  <div class="sociologia-container">
+    <br> <br>
+      <h2 class="sociologia-title">Unidade 2</h2><br><br>
+      <h2 class="sociologia-title">Trabalho, política e sociedade</h2>
+      <div class="sociologia-grid">
+          <a class="sociologia-item" href="MS1/intro.html">Capitalismo, globalização e neoliberalismo</a>
+          <a class="sociologia-item" href="MS1/cs.html">Trabalho e desigualdades sociais</a>
+          <a class="sociologia-item" href="MS1/sxs2.html">Capitalismo e a questão ambiental</a>
+          <a class="sociologia-item" href="MS1/psi.html">Cidadania e direitos</a>
+          <a class="sociologia-item" href="MS1/as.html">Estado e democracia</a>
+          <a class="sociologia-item" href="MS1/psc.html">Movimentos sociais</a>
+          <a class="sociologia-item" href="MS1/km.html">"Mídias e inteligência artificial</a>
+         
+          
+        
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: rodrigospalla021@.com</p>
+            <p>Telefone: (22) 98808-0994</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Creditos:</h2>
+          <a href="#" class="social-link">Orientador: Ricardo Cesar Rocha da Costa</a><br>
+          <a href="#" class="social-link">Desenvolvedor: Rodrigo Spalla Mendonça</a><br>
+          <a href="#" class="social-link">Editora: Maria Eduarda Madureira Vitor da Cruz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>

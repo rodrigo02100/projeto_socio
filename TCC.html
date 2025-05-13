@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>TCC</title>
+
+    <style>            
+    .search-input{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .search-button{
+        background-color: aliceblue;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .navigation {
+
+        display: flex;
+        flex-wrap:wrap;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: hsl(235, 56%, 42%);
+        gap: 60px;
+        margin-top: 15px;    
+        margin: 0 auto;    
+   
+    
+    
+        }
+
+        ul{padding: 10px;
+            list-style-type: none;
+            background-color: lightgrey;
+        }
+        a:link{color: rgb(255, 255, 255);
+            
+            }
+
+        a:visited{color: rgb(255, 255, 255);
+            }
+
+        a:hover{color: white;
+           
+        padding: px;
+        border-radius: 10px;
+        text-decoration-line: underline;
+        
+            }
+
+        a:active{color: rgb(46, 53, 141);
+            list-style-type: none;
+            }
+            
+            </style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="TCC.html"> <span class="logo-text">PORTAL SOCIOLOGIA</span></a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Busque um tema" class="search-input">
+            <button class="search-button">🔍</button></i> <br>
+        </div>
+        <nav class="navigation">
+            <a href="socio1.html">SOCIOLOGIA 1</a>
+            <a href="socio2.html">SOCIOLOGIA 2</a>
+            <a href="socio3.html">SOCIOLOGIA 3</a>
+            <a href="socio4.html">SOCIOLOGIA 4</a>
+            <a href="socio5.html">SOCIOLOGIA 5</a>
+            <a href="socio6.html">SOCIOLOGIA 6</a>
+            <a href="socio1.html">ENEM</a>
+            <a href="socio1.html">EXERCÍCIOS</a>
+        </nav>
+       
+    </header>
+
+</div>
+
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="banner">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 375px;
+        margin-bottom: 10px; 
+        border-bottom: 10px solid rgb(255, 196, 0);
+        border-top: 10px solid rgb(255, 196, 0);
+        background-color: #06abb7;
+        overflow: hidden;
+    }
+    
+    .meio {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #f8f8f8;
+        padding: 10px 0;
+    }
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-wrapper {
+        align-items: center;
+    }
+    
+    .swiper-slide {
+        width: 80%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+        transform: scale(0.9); /* Efeito de redução para slides não ativos */
+    }
+    
+    .swiper-slide-active {
+        opacity: 1;
+        transform: scale(1); /* Slide ativo em tamanho normal */
+    }
+    
+    .swiper-slide-next,
+    .swiper-slide-prev {
+        opacity: 0.7;
+    }
+    
+    .slide-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>
+
+<div class="meio">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>Exercícios com Gabaritos Explicados!</h2>
+                <p>Pratique exercícios interativos, aprenda com explicações detalhadas e avance na sua jornada de aprendizado para dominar a matéria.</p>
+                <a href="#" class="slide-button">Comece a Praticar Agora</a>
+            </div>
+            <div class="swiper-slide">
+                <h2>Aprenda de Forma Interativa!</h2>
+                <p>Com desafios envolventes, você reforça seu conhecimento de forma divertida.</p>
+                <a href="#" class="slide-button">Ver Exercícios</a>
+            </div>
+            <div class="swiper-slide">
+                <h2>Domine a Matéria com Explicações Detalhadas!</h2>
+                <p>Cada resposta vem acompanhada de uma explicação clara e objetiva.</p>
+                <a href="#" class="slide-button">Explorar Agora</a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 20,
+        loopedSlides: 3,
+        loopAdditionalSlides: 1, // Adiciona slides extras para o loop
+        slideToClickedSlide: true,
+        
+        // Efeito visual melhorado
+        effect: 'creative',
+        creativeEffect: {
+            prev: {
+                translate: ['-20%', 0, -100],
+                opacity: 0.7
+            },
+            next: {
+                translate: ['20%', 0, -100],
+                opacity: 0.7
+            }
+        },
+        
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 30,
+            }
+        },
+        
+        // Inicialização corrigida
+        on: {
+            init: function () {
+                // Força a atualização da posição após a inicialização
+                setTimeout(() => {
+                    this.slideTo(1, 0); // Vai para o slide 1 sem animação
+                }, 100);
+            }
+        }
+    });
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="main-content">
+   
+    <section class="subjects">
+        <h2>MODULOS DA MATÉRIA</h2>
+        <div class="subject-list">
+            <div class="subject-item">
+               <a href="socio1.html"> 
+                <img src="socio1.jpg" alt="SOCIOLOGIA 1">
+                <h3>SOCIOLOGIA 1</h3>
+            </a>
+            </div>
+
+            <div class="subject-item">
+               <a href="socio2.html"> 
+                <img src="IMG\sociol2.png" alt="SOCIOLOGIA 2">
+                <h3>SOCIOLOGIA 2</h3>
+            </a>
+            </div>
+
+            <div class="subject-item">
+                <a href="socio3.html"> 
+                    <img src="IMG\socio3.png" alt="SOCIOLOGIA 3">
+                <h3>SOCIOLOGIA 3</h3>
+            </a>
+            </div>
+            
+            <div class="subject-item">
+                <a href="socio4.html"> 
+                    <img src="IMG\socio4.png" alt="SOCIOLOGIA 4">
+                <h3>SOCIOLOGIA 4</h3>
+            </a>
+            </div>
+
+            <div class="subject-item">
+                <a href="socio5.html"> 
+                    <img src="IMG\so5.png" alt="SOCIOLOGIA 5">
+                <h3>SOCIOLOGIA 5</h3>
+            </a>
+            </div>
+
+            <div class="subject-item">
+                <a href="socio6.html"> 
+                    <img src="IMG\soci6.png" alt="SOCIOLOGIA 6">
+                <h3>SOCIOLOGIA 6</h3>
+            </a>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </section>
+</main>
+<footer class="footer">
+
+    
+    <div class="footer-content">
+        <div class="footer-section about">
+            
+              
+            
+            
+            
+            
+            
+            
+            
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: rodrigospalla021@.com</p>
+            <p>Telefone: (22) 98808-0994</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Creditos:</h2>
+          <a href="#" class="social-link">Orientador: Ricardo Cesar Rocha Filho</a><br>
+          <a href="#" class="social-link">Desenvolvedor: Rodrigo Spalla Mendonça</a><br>
+          <a href="#" class="social-link">Editora: Maria Eduarda Madureira Vitor da Cruz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>

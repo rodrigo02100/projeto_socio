@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="socio1.css">
+    <title>TCC</title>
+
+    <style>            
+    .search-input{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .search-button{
+        background-color: aliceblue;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .navigation {
+
+        display: flex;
+        flex-wrap:wrap;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: hsl(235, 56%, 42%);
+        gap: 60px;
+        margin-top: 15px;    
+        margin: 0 auto;    
+   
+    
+    
+        }
+
+        ul{padding: 10px;
+            list-style-type: none;
+            background-color: lightgrey;
+        }
+        a:link{color: rgb(255, 255, 255);
+            
+            }
+
+        a:visited{color: rgb(255, 255, 255);
+            }
+
+        a:hover{color: white;
+           
+        padding: px;
+        border-radius: 10px;
+        text-decoration-line: underline;
+        
+            }
+
+        a:active{color: rgb(46, 53, 141);
+            list-style-type: none;
+            }
+            
+            
+            </style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="TCC.html"> <span class="logo-text">PORTAL SOCIOLOGIA</span></a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Busque um tema" class="search-input">
+            <button class="search-button">🔍</button></i> <br>
+        </div>
+        <nav class="navigation">
+            <a href="socio1.html">SOCIOLOGIA 1</a>
+            <a href="socio2.html">SOCIOLOGIA 2</a>
+            <a href="socio3.html">SOCIOLOGIA 3</a>
+            <a href="socio4.html">SOCIOLOGIA 4</a>
+            <a href="socio5.html">SOCIOLOGIA 5</a>
+            <a href="socio6.html">SOCIOLOGIA 6</a>
+            <a href="socio1.html">ENEM</a>
+            <a href="socio1.html">EXERCÍCIOS</a>
+        </nav>
+       
+    </header>
+
+</div>
+<button id="openModalBtn" class="fixed-button">Socio ia</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>SOCIO IA</h2>
+      <button id="closeModalBtn" class="btn btn-close">Fechar</button>
+    </div>
+    <div class="inner">
+      <div id="conversa" class="conversa"></div> <!-- Container de chat -->
+      <div class="input-area">
+        <div class="input-box">
+          <input type="text" id="pergunta" placeholder="Digite sua pergunta...">
+          <button id="enviar" class="btn"><span class="arrow">↑</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+
+
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('modal');
+
+    // Abrir a modal
+    openModalBtn.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+
+    // Fechar a modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+  </script>
+
+
+</body>
+
+<main class="main-content">
+    <div class="conteudo"> 
+    <div class="banner">
+        <div class="banner-content">
+        
+    
+            <button class="text">SOCIOLOGIA 6</button>
+            <br>
+            <br>
+
+
+            <button class="cta-button">O que é sociologia</button>
+            <button class="cta-button">Max Weber</button>
+            <button class="cta-button">Processo de Socialização</button>
+            <br>
+            <button class="cta-button">Émile Durkheim </button>
+            <button class="cta-button">Agentes de socialização</button>
+            <button class="cta-button">Karl Marx</button>
+            <br>
+            <button class="cta-button">Desigualdade social</button>
+            <button class="cta-button">O que é cultura</button>
+            <button class="cta-button">Tipos de estratificação</button>
+
+        </div>
+        <img src="sociob1.png" alt="SOCIOLOGIA 1">
+        
+    </div>
+</div>
+
+</main>
+
+
+
+
+<div class="sociologia-section">
+    <div class="sociologia-container">
+      <br> <br>
+        <h2 class="sociologia-title">Topicos Sociologia 6</h2><br><br>
+        <h2 class="sociologia-title">Identidade e Diversidade na Contemporaneidade</h2>
+        <div class="sociologia-grid">
+            <a class="sociologia-item" href="MS1/61.html">Identidades sociais e culturais em um mundo globalizado</a>
+            <a class="sociologia-item" href="MS1/62.html">Desafios da convivência na diversidade: xenofobia, racismo, homofobia, intolerância religiosa.
+            </a>
+            <a class="sociologia-item" href="MS1/63.html">Movimentos de afirmação identitária e multiculturalismo</a>
+            </div><br> <br></div>
+            <div class="sociologia-container">
+              <br> <br>
+                <h2 class="sociologia-title">Conflitos Sociais Contemporâneos</h2>
+                <div class="sociologia-grid">
+                    <a class="sociologia-item" href="MS1/64.html">Novos movimentos sociais (LGBTQIA+, antirracismo, ambientalismo)</a>
+                    <a class="sociologia-item" href="MS1/65.html">Violência urbana, criminalidade e segurança pública</a>
+                    <a class="sociologia-item" href="MS1/66.html">Discussões sobre direitos humanos e justiça social.
+                    </a>
+                  </div><br> <br></div>
+                       
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma educacional dedicada a fornecer conteúdos de qualidade para todos os estudantes.</p>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: contatoportalsocio@.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+        <div class="footer-section social">
+            <h2>Redes Sociais</h2>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PORTAL SOCIOLOGIA | Todos os direitos reservados.
+    </div>
+</footer>
+
+</html>
